@@ -12,6 +12,7 @@ export const TextGenerateEffect = ({
 }) => {
     const [scope, animate] = useAnimate();
     let wordsArray = words.split(" ");
+
     useEffect(() => {
         animate(
         "span",
@@ -23,7 +24,7 @@ export const TextGenerateEffect = ({
             delay: stagger(0.2),
         }
         );
-    }, [animate]);
+    }, [scope.current, animate]);
 
     const renderWords = () => {
         return (
@@ -31,12 +32,12 @@ export const TextGenerateEffect = ({
             {wordsArray.map((word, idx) => {
             return (
                 <motion.span
-                key={word + idx}
-                className={`${idx > 3 ? 'text-purple' : 'dark:text-white text-black' } opacity-0`}
+                    key={word + idx}
+                    className={` ${idx > 3 ? "text-purple" : "dark:text-white text-black"} opacity-0`}
                 >
-                {word}{" "}
+                    {word}{" "}
                 </motion.span>
-            );
+            );  
             })}
         </motion.div>
         );
