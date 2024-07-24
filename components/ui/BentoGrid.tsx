@@ -4,7 +4,7 @@ import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { BackgroundGradientAnimation } from "./GradientBackground";
 import Lottie from "react-lottie";
-import GridGlobe from "./GridGlob";
+import GridGlobe from "./GridGlobe";
 
 export const BentoGrid = ({className, children,}: {
     className?: string;
@@ -110,7 +110,7 @@ export const BentoGridItem = ({
             <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
                 {description}
             </div>
-            <div className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}>{title}</div>
+            <div className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-20`}>{title}</div>
                 {id === 2 && <GridGlobe />}
                 {id === 3 && (
                     <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
@@ -145,11 +145,10 @@ export const BentoGridItem = ({
                         <div className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"}`}>
                             <Lottie options={defaultOptions} height={200} width={400} />
                         </div>
-        
                         <MagicButton
                             title={copied ? "Email is Copied!" : "Copy my email address"}
                             icon={''}
-                            position="left"
+                            position=""
                             handleClick={handleCopy}
                             otherClasses="!bg-[#161A31]"
                         />
