@@ -18,7 +18,7 @@ const RecentProjects = () => {
                 {projects.map(({id, title, des, img, iconLists, link}) => (
                     <div key={id} className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]">
                         <PinContainer title={title} href={link}>
-                            <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[23vh] mb-10">
+                            <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[28vh] lg:h-[23vh] mb-10">
                                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl" style={{ backgroundColor: "#13162D"}}>
                                     <img src="/bg.png" alt="bg-img" />
                                 </div>
