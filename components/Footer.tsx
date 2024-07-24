@@ -14,7 +14,7 @@ const Footer = () => {
                 />
             </div>
             <div className="flex flex-col items-center">
-                <h1 className="heading lg:max-w-[45vw]">Ready to contact me? Hit me up below!</h1>
+                <h1 className="heading lg:max-w-[45vw]">Ready to contact me? Click below!</h1>
                 <p className="text-white-100 md:mt-10 my-5 text-center">Reach out to me today and let&apos;s discuss achieving your goals</p>
                 <a href="mailto:faragher6@gmail.com">
                     <MagicButton
