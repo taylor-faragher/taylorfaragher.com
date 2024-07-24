@@ -18,11 +18,11 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "I'm very flexible with time zone communications",
+      title: "I currently live in Smyrna, TN (CST), but I am able to work remotely with any timezone.",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
-      titleClassName: "justify-start",
+      titleClassName: "justify-start text-center",
       img: "",
       spareImg: "",
     },
@@ -74,44 +74,34 @@ export const navItems = [
       id: 1,
       title: "Weather SPA App",
       des: "A full production ready single page application website built with React, Typescript, and AWS",
-      img: "/p1.svg",
+      img: "/WeatherSPA.webp",
       iconLists: ["/re.svg", "/ts.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      link: "https://github.com/taylor-faragher/WeatherWebsite-Vite-React",
     },
     {
       id: 2,
       title: "Mock Media App",
       des: "A full stack mock React Native app for uploading and viewing video content",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      img: "/MockMediaApp.webp",
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+      link: "https://github.com/taylor-faragher/mock-media-app-reactnative",
     },
     {
       id: 3,
       title: "Weather Proxy Backend",
       des: "The production ready backend proxy lambda for my Weather SPA App",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      img: "/WeatherBackend.webp",
+      iconLists: ["/js_small.svg", "ts.svg"],
+      link: "https://github.com/taylor-faragher/Weather-Lambda",
     },
     {
       id: 4,
       title: "Link Shortening Database",
       des: "An api backend with Postgresql database for link shortening site. More coming soon!",
-      img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      img: "/LinkShortenerBackend.webp",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+      link: "https://github.com/taylor-faragher/link-shortening-backend",
     },
-  ];
-  
-  export const testimonials = [
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    
   ];
   
   export const companies = [
@@ -165,36 +155,37 @@ export const navItems = [
       nameImg: 'tailwindcss-logotype-white.svg',
       width: 400,
     }
+    //React, React Native, HTML, CSS, Jest, Github, Git, Vite, Webpack, SQL, Postgresql, vscode, expo, next.js
   ];
   
   export const workExperience = [
     {
       id: 1,
       title: "Software Engineer 2",
-      desc: "Assisted in the development of a web-based platforms using React.js, Typescript and AWS Cloud",
+      desc: "Lead the development of a web-based platforms using React.js, Typescript and AWS Cloud",
       className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
+      thumbnail: "/SoftwareEngineer2.webp",
     },
     {
       id: 2,
-      title: "Software Enginner 1",
-      desc: "Developed and tested internal web-based CSM software used by 1500 daily users.",
+      title: "Software Engineer 1",
+      desc: "Developed and tested internal web-based CSM software used by 1500 daily users using Dart, Angular, and Bootstrap",
       className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
+      thumbnail: "/SoftwareEngineer1.webp",
     },
     {
       id: 3,
       title: "Software Developer Engineer in Test",
       desc: "Tested React and JavaScript based applications. Developed automated systems for production support.",
       className: "md:col-span-2",
-      thumbnail: "/exp2.svg",
+      thumbnail: "/SDET.webp",
     },
     {
       id: 4,
       title: "SQA Analyst 2",
-      desc: "Tested some stuff",
+      desc: "Automated and manual tested a large internal CSM application along with React based applications",
       className: "md:col-span-2",
-      thumbnail: "/exp3.svg",
+      thumbnail: "/SQAEngineer.webp",
     },
   ];
   
@@ -206,8 +197,8 @@ export const navItems = [
     },
     {
       id: 2,
-      img: "/twit.svg",
-      name: 'twitter'
+      img: "/insta.svg",
+      name: 'Instagram'
     },
     {
       id: 3,
