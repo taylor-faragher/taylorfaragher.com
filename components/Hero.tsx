@@ -25,7 +25,7 @@ const Hero = () => {
                     <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">a Full Stack Software Engineer</p>
                     <Image src='/HeroShot.png' alt="Picture of Taylor Faragher" width={250} height={100} className="rounded-full mt-3 mb-6 lg:mb-0 " />
                     <a href="#about">
-                        <MagicButton title="Show My Work" icon={<FaLocationArrow />} position="right" />
+                        <MagicButton title="Show My Work" icon={<FaLocationArrow />} position="right" buttonClasses="mt-10" />
                     </a>
                 </div>
             </div>
