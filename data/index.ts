@@ -205,18 +205,18 @@ export const navItems = [
   
   export const socialMedia = [
     {
-      id: 1,
       img: "/git.svg",
-      name: 'git'
+      name: 'git',
+      link: 'https://github.com/taylor-faragher'
     },
     {
-      id: 2,
       img: "/insta.svg",
-      name: 'Instagram'
+      name: 'Instagram',
+      link: 'https://www.instagram.com/smurd9/',
     },
     {
-      id: 3,
       img: "/link.svg",
-      name: 'linkedIn'
+      name: 'linkedIn',
+      link: 'https://www.linkedin.com/in/taylor-faragher-71360560'
     },
   ];
