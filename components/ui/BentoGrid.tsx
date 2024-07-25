@@ -52,6 +52,7 @@ export const BentoGridItem = ({
 
     const handleCopy = () => {
         const text = "faragher6@gmail.com";
+        //This does not work on localhost with iOS devices. Needs to come from a https origin to work.
         navigator.clipboard.writeText(text);
         setCopied(true);
         setTimeout(() => setCopied(false), 10000)
@@ -97,7 +98,9 @@ export const BentoGridItem = ({
             </div>
             {id === 6 && (
                 <BackgroundGradientAnimation>
-                    <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
+                    {copied && <div className="flex flex-row">
+                        <img src="/confetti.gif" alt="confetti" className="w-52" data-test-id="confetti" /><img src="/confetti.gif" alt="confetti" className="w-52" />
+                    </div>}
                 </BackgroundGradientAnimation>
             )}
 
@@ -141,10 +144,7 @@ export const BentoGridItem = ({
                     </div>
                 )}
                 {id === 6 && (
-                    <div className="mt-5 relative">
-                        <div className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"}`}>
-                            <Lottie options={defaultOptions} height={200} width={400} />
-                        </div>
+                    <div className="mt-5">
                         <MagicButton
                             title={copied ? "Email is Copied!" : "Copy my email address"}
                             icon={''}
