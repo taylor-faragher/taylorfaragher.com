@@ -1,9 +1,7 @@
 import { cn } from "@/utils/cn";
 import { useState } from "react";
-import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { BackgroundGradientAnimation } from "./GradientBackground";
-import Lottie from "react-lottie";
 import GridGlobe from "./GridGlobe";
 
 export const BentoGrid = ({className, children,}: {
@@ -40,15 +38,6 @@ export const BentoGridItem = ({
     const rightLists = ["NodeJS", "AWS", "SQL"];
 
     const [copied, setCopied] = useState(false);
-
-    const defaultOptions = {
-        loop: false,
-        autoplay: false,
-        animationData: animationData,
-        rendererSettings: {
-            preserveAspectRatio: "xMidYMid slice",
-        },
-    };
 
     const handleCopy = () => {
         const text = "faragher6@gmail.com";
