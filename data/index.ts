@@ -13,12 +13,12 @@ export const navItems = [
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
-      img: "/b1.svg",
+      img: "/b1.webp",
       spareImg: "",
     },
     {
       id: 2,
-      title: "I currently live in Smyrna, TN (CST), but I am able to work remotely with any timezone.",
+      title: "Currently living in Smyrna, TN (CST), but can work remotely with any timezone.",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
@@ -75,7 +75,7 @@ export const navItems = [
       title: "Weather SPA App",
       des: "A full production ready single page application website built with React, Typescript, and AWS",
       img: "/WeatherSPA.webp",
-      iconLists: ["/re.svg", "/ts.svg"],
+      iconLists: ["/re.svg", "/ts.svg", "awsIcon.svg", "jestIcon.svg", "CypressIcon.svg"],
       link: "https://github.com/taylor-faragher/WeatherWebsite-Vite-React",
     },
     {
@@ -91,7 +91,7 @@ export const navItems = [
       title: "Weather Proxy Backend",
       des: "The production ready backend proxy lambda for my Weather SPA App",
       img: "/WeatherBackend.webp",
-      iconLists: ["/js_small.svg", "ts.svg"],
+      iconLists: ["/js_small.svg", "ts.svg", "awsIcon.svg", "openWeatherMapIcon.svg"],
       link: "https://github.com/taylor-faragher/Weather-Lambda",
     },
     {
@@ -99,7 +99,7 @@ export const navItems = [
       title: "Link Shortening Database",
       des: "An api backend with Postgresql database for link shortening site. More coming soon!",
       img: "/LinkShortenerBackend.webp",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+      iconLists: ["/ts.svg", "postgresql.svg", "awsIcon.svg"],
       link: "https://github.com/taylor-faragher/link-shortening-backend",
     },
   ];
@@ -109,51 +109,65 @@ export const navItems = [
       id: 1,
       name: "Cypress",
       img: "",
+      imgClasses: '',
       nameImg: "/Cypress_Logotype_White.svg",
+      nameImgClasses: 'w-32',
     },
     {
       id: 2,
       name: "AWS Cloud Services",
       img: "",
+      imgClasses: '',
       nameImg: "/AWSLogo.svg",
+      nameImgClasses: 'md:w-28'
     },
     {
       id: 3,
       name: "JavaScript",
       img: "/javascriptLogo.svg",
+      imgClasses: "",
       nameImg: "",
+      nameImgClasses:""
     },
     {
       id: 4,
       name: "TypeScript",
       img: "/ts-logo-128.svg",
+      imgClasses: '',
       nameImg: "/TSLogo.svg",
+      nameImgClasses: 'w-24',
     },
     {
       id: 5,
       name: "docker.",
       img: "/dock.svg",
+      imgClasses: 'w-30',
       nameImg: "/dockerName.svg",
-      width: 100,
+      nameImgClasses: '',
     },
     {
       id: 6,
       name: "nodejs",
       img: "",
-      nameImg: "nodejsLight.svg"
+      imgClasses: '',
+      nameImg: "nodejsLight.svg",
+      nameImgClasses: 'md:w-28',
     },
     {
       id: 7,
-      name: 'styled components',
+      name: 'styled-components',
       img: 'styled-components.svg',
-      nameImg: ''
+      imgClasses: 'w-16',
+      nameImg: '',
+      nameImgClasses: 'text-lg md:text-[1.20rem]',
     },
     {
       id: 8,
       name: 'Tailwind CSS',
       img: '',
+      imgClasses: '',
       nameImg: 'tailwindcss-logotype-white.svg',
-      width: 400,
+      nameImgClasses: 'w-[170px]',
     }
     //React, React Native, HTML, CSS, Jest, Github, Git, Vite, Webpack, SQL, Postgresql, vscode, expo, next.js
   ];
