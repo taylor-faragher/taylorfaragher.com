@@ -7,7 +7,6 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { InfiniteScrollingCards } from "./ui/InfiniteScrollingCards";
 
 const RecentProjects = () => {
-
     return (
         <section id="projects">
             <h1 className="heading">
@@ -52,7 +51,7 @@ const RecentProjects = () => {
 
             <div className="flex flex-col items-center">
                 <div
-                className="h-[10rem] md:h-[10rem] rounded-md flex flex-col antialiased  items-center justify-center overflow-hidden"
+                className="h-[10rem] md:h-[10rem] rounded-md flex flex-col antialiased  items-center justify-between overflow-hidden"
                 >
                 <InfiniteScrollingCards
                     companies={companies}
