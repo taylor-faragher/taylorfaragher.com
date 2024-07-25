@@ -15,7 +15,8 @@ export const InfiniteScrollingCards = ({
     img: string;
     name: string;
     nameImg: string;
-    width?: number;
+    imgClasses?: string;
+    nameImgClasses?: string;
   }[];
   direction?: "left" | "right";
   pauseOnHover?: boolean;
@@ -24,13 +25,16 @@ export const InfiniteScrollingCards = ({
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
 
+
+  const [start, setStart] = useState(false);
+
   useEffect(() => {
     addAnimation();
   }, []);
 
-  const [start, setStart] = useState(false);
-  function addAnimation() {
+  const addAnimation = () => {
     if (containerRef.current && scrollerRef.current) {
+      //Duplicates the array items so that the carousel effect lasts longer
       const scrollerContent = Array.from(scrollerRef.current.children);
 
       scrollerContent.forEach((item) => {
@@ -63,7 +67,7 @@ export const InfiniteScrollingCards = ({
   };
   const getSpeed = () => {
     if (containerRef.current) {
-        containerRef.current.style.setProperty("--animation-duration", "80s")
+        containerRef.current.style.setProperty("--animation-duration", "40s")
     }
   };
   return (
@@ -77,37 +81,36 @@ export const InfiniteScrollingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          // change gap-16
           " flex min-w-full shrink-0 gap-16 py-4 w-max flex-nowrap",
           start && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {companies.map((company, idx) => (
-            <li className="flex flex-wrap items-center justify-center gap-4 md:gap-16"
-            key={idx}>
-            <div className="flex md:max-w-60 max-w-32 gap-2 items-center">
-                {company.img && (
-                    <img
-                        src={company.img}
-                        alt={company.name}
-                        className="md:w-30 w-20"
-                    />
-                )}
-                {company.nameImg && (
-                    <img
-                        src={company.nameImg}
-                        alt={company.name}
-                        width={ company.width ? company.width : 150}
-                        className="md:w-30 w-30"
-                    />
-                )}
-                {!company.nameImg && (
-                    <h3 className="lg:text-3xl lg:font-semibold font-extrabold text-lg ">{company.name}</h3>
-                )}
-            </div>
-          </li>
-        ))}
+        {companies.map((company, idx) => {
+          return (
+            <li className="flex flex-wrap items-center justify-center gap-4 md:gap-16" key={idx}>
+              <div className="flex md:max-w-60 max-w-36 gap-2 items-center">
+                  {company.img && (
+                      <img
+                          src={company.img}
+                          alt={company.name}
+                          className={`max-w-[48px] ${company.imgClasses}`}
+                      />
+                  )}
+                  {company.nameImg && (
+                      <img
+                          src={company.nameImg}
+                          alt={company.name}
+                          className={`${company.nameImgClasses}`}
+                      />
+                  )}
+                  {!company.nameImg && (
+                      <h3 className={`text-2xl font-medium ${company.nameImgClasses}`}>{company.name}</h3>
+                  )}
+              </div>
+            </li>
+          )
+        })}
       </ul>
     </div>
   );
