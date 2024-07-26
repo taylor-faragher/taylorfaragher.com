@@ -5,8 +5,8 @@ import {socialMedia} from '@/data/index'
 
 const Footer = () => {
     return (
-        <footer className="w-full pb-10" id="contact">
-            <div className="w-full absolute left-0 -bottom-72 min-h-96">
+        <footer className="w-full pb-10 pt-20" id="contact">
+            <div className="w-full absolute left-0 -bottom-72 min-h-96 overflow-hidden">
                 <img 
                     src="/footer-grid.svg" 
                     alt="grid" 
@@ -14,7 +14,7 @@ const Footer = () => {
                 />
             </div>
             <div className="flex flex-col items-center">
-                <h1 className="heading lg:max-w-[45vw]">Ready to contact me? Click below!</h1>
+                <h1 className="heading lg:max-w-[45vw]">Want to contact me? Click below!</h1>
                 <p className="text-white-100 md:mt-10 my-5 text-center">Reach out to me today and let&apos;s discuss achieving your goals</p>
                 <a href="mailto:faragher6@gmail.com">
                     <MagicButton
