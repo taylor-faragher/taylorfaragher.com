@@ -23,6 +23,7 @@ export const BentoGridItem = ({
     description,
     img,
     imgClassName,
+    boxClassName,
     titleClassName,
     spareImg,
 }: {
@@ -32,6 +33,7 @@ export const BentoGridItem = ({
         description?: string | React.ReactNode;
         img?: string;
         imgClassName?: string;
+        boxClassName?: string;
         titleClassName?: string;
         spareImg?: string;
     }) => {
@@ -65,7 +67,7 @@ export const BentoGridItem = ({
                     <img
                         src={img}
                         alt={img}
-                        className={cn(imgClassName, "object-cover object-center ")}
+                        className={cn(imgClassName, "object-center ")}
                     />
                 )}
             </div>
@@ -93,14 +95,14 @@ export const BentoGridItem = ({
 
             <div
                 className={cn(
-                titleClassName,
+                boxClassName,
                 "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
                 )}
             >
-            <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+            <div className="font-sans font-extralight md:max-w-48 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
                 {description}
             </div>
-            <div className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-20`}>{title}</div>
+            <div className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-20 ${titleClassName}`}>{title}</div>
                 {id === 2 && <GridGlobe />}
                 {id === 3 && (
                     <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
