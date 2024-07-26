@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { cn } from "@/utils/cn";
 import { useState } from "react";
 import MagicButton from "./MagicButton";
@@ -58,11 +59,9 @@ export const BentoGridItem = ({
                 "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
         }}
     >
-        {/* add img divs */}
         <div className={`${id === 6 && "flex justify-center"} h-full`}>
             <div className="w-full h-full absolute">
                 {img && (
-                    // eslint-disable-next-line @next/next/no-img-element
                     <img
                         src={img}
                         alt={img}
@@ -75,7 +74,6 @@ export const BentoGridItem = ({
                 } `}
             >
                 {spareImg && (
-                // eslint-disable-next-line @next/next/no-img-element
                 <img
                     src={spareImg}
                     alt={spareImg}
