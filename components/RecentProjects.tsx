@@ -13,11 +13,11 @@ const RecentProjects = () => {
                 A Small Selection of {' '}
                 <span className="text-purple">Recent Projects</span>
             </h1>
-            <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+            <div className="flex flex-wrap items-center justify-center p-4 gap-24 sm:gap-40 md:gap-38 lg:gap-24 mt-16">
                 {projects.map(({id, title, des, img, iconLists, link}) => (
                     <div key={id} className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]">
                         <PinContainer title={title} href={link}>
-                            <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[28vh] lg:h-[23vh] mb-10">
+                            <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[30vh] lg:h-[38vh] mb-10">
                                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl" style={{ backgroundColor: "#13162D"}}>
                                     <img src="/bg.png" alt="bg-img" />
                                 </div>
@@ -29,7 +29,7 @@ const RecentProjects = () => {
                             <div className="flex items-center justify-between mt-7 mb-3">
                                 <div className="flex items-center">
                                     {iconLists.map((icon, index) => (
-                                        <div key={icon} className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center" style={{transform: `translateX(-${5 * index * 2}px)`}}>
+                                        <div key={icon} className="border border-white/[0.2x] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center" style={{transform: `translateX(-${5 * index * 2}px)`}}>
                                             <img src={icon} alt="cover" className="p-2" />
                                         </div>
                                     ))}
@@ -44,7 +44,7 @@ const RecentProjects = () => {
                     </div>
                 ))}
             </div>
-            <h1 className="heading pb-5 pt-20">
+            <h1 className="heading pb-5 pt-28">
                 Additional 
                 <span className="text-purple"> Skills and Technologies</span>
             </h1>
