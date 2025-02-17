@@ -21,7 +21,7 @@ const Footer = () => {
                 </a>
             </div>
             <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-                <p className='md:text-base text-sm md:font-normal font-light'>Copyright © 2024 Taylor Faragher</p>
+                <p className='md:text-base text-sm md:font-normal font-light'>Copyright © 2025 Taylor Faragher</p>
                 <div className="flex items-center md:gap-2 gap-6 md:mr-[17%] mr-0 mt-5 md:mt-0">
                     {socialMedia.map((profile, index) => (
                         <a href={profile.link} key={index}>
