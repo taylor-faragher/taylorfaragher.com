@@ -181,31 +181,31 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Software Engineer 2",
-      desc: "Lead the development of a web-based platforms using React.js, Typescript and AWS Cloud",
+      title: "Software Engineer",
+      desc: "Created data graphs and front end features for multiple large monolith-monorepo code bases in TypeScript, Javascript, and React",
       className: "md:col-span-2",
-      thumbnail: "/SoftwareEngineer2.webp",
+      thumbnail: "/str.webp",
     },
     {
       id: 2,
-      title: "Software Engineer 1",
-      desc: "Developed and tested internal web-based CSM software used by 1500 daily users using Dart, Angular, and Bootstrap",
+      title: "Software Engineer 2",
+      desc: "Lead the development of a web-based platforms using React.js, Typescript and AWS Cloud",
       className: "md:col-span-2",
-      thumbnail: "/SoftwareEngineer1.webp",
+      thumbnail: "/asurion.webp",
     },
     {
       id: 3,
-      title: "Software Developer Engineer in Test",
-      desc: "Tested React and JavaScript based applications. Developed automated systems for production support.",
+      title: "Software Engineer 1",
+      desc: "Developed and tested internal web-based CSM software used by 1500 daily users using Dart, Angular, and Bootstrap",
       className: "md:col-span-2",
-      thumbnail: "/SDET.webp",
+      thumbnail: "/asurion.webp",
     },
     {
       id: 4,
-      title: "SQA Analyst 2",
-      desc: "Automated and manual tested a large internal CSM application along with React based applications",
+      title: "Software Developer Engineer in Test",
+      desc: "Tested React and JavaScript based applications. Developed automated systems for production support.",
       className: "md:col-span-2",
-      thumbnail: "/SQAEngineer.webp",
+      thumbnail: "/asurion.webp",
     },
   ];
   
