@@ -1,10 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import { workExperience } from "@/data";
 import { Button } from "./ui/Moving-Border";
+import { useState } from "react";
 const Experience = () => {
+    const [randomNumber] = useState<number>(() => Math.random() * 10000);
+    
     return (
         <>
-            <div className="w-full md:pt-20" id="experience">
+            <div className="w-full pt-5" id="experience">
                 <h1 className="heading">My <span>Work Experience</span></h1>
             </div>
             <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
@@ -13,17 +16,17 @@ const Experience = () => {
                         key={card.id} 
                         borderRadius="1.75rem" 
                         className="flex-1 text-white border-neutral-200 dark:border-slate-800"
-                        duration={Math.floor(Math.random() * 10000) + 10000}
+                        duration={randomNumber + card.seedNumber}
                         >
-                        <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+                        <div className="flex lg:flex-row flex-col items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
                             <img
                                 src={card.thumbnail}
                                 alt={card.thumbnail}
                                 className="lg:w-32 md:w-20 w-16"
                             />
                             <div className="lg:ms-5 ">
-                                <h1 className="text-start text-xl md:text-wxl font-bold">{card.title}</h1>
-                                <p className="text-start text-white-100 mt-3 font-semibold">{card.desc}</p>
+                                <h1 className="md:text-start text-xl md:text-wxl font-bold">{card.title}</h1>
+                                <p className="md:text-start text-white-100 mt-3 font-semibold">{card.desc}</p>
                             </div>
                         </div>
                     </Button>
