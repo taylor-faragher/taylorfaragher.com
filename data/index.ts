@@ -1,3 +1,5 @@
+import { WorkExperienceCard } from "@/types/WorkExperienceCard";
+
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
@@ -178,13 +180,22 @@ export const navItems = [
     //React, React Native, HTML, CSS, Jest, Github, Git, Vite, Webpack, SQL, Postgresql, vscode, expo, next.js
   ];
   
-  export const workExperience = [
+  export const workExperience: WorkExperienceCard[] = [
+    {
+      id: 0,
+      title: "Software Developer (Full Stack)",
+      desc: "Developing and maintaining backend and frontend systems using Vue.js, NestJS, and AWS services",
+      className: "md:col-span-2",
+      thumbnail: "/quore.webp",
+      seedNumber: 20
+    },
     {
       id: 1,
       title: "Software Engineer",
       desc: "Created data graphs and front end features for multiple large monolith-monorepo code bases in TypeScript, Javascript, and React",
       className: "md:col-span-2",
       thumbnail: "/str.webp",
+      seedNumber: 2000
     },
     {
       id: 2,
@@ -192,6 +203,7 @@ export const navItems = [
       desc: "Lead the development of a web-based platforms using React.js, Typescript and AWS Cloud",
       className: "md:col-span-2",
       thumbnail: "/asurion.webp",
+      seedNumber: 1990
     },
     {
       id: 3,
@@ -199,13 +211,15 @@ export const navItems = [
       desc: "Developed and tested internal web-based CSM software used by 1500 daily users using Dart, Angular, and Bootstrap",
       className: "md:col-span-2",
       thumbnail: "/asurion.webp",
+      seedNumber: 100
     },
     {
       id: 4,
       title: "Software Developer Engineer in Test",
       desc: "Tested React and JavaScript based applications. Developed automated systems for production support.",
-      className: "md:col-span-2",
+      className: "md:col-span-1",
       thumbnail: "/asurion.webp",
+      seedNumber: 800
     },
   ];
   
