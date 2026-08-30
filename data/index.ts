@@ -32,7 +32,7 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "Currently learning React Native and Next.js",
+      title: "Currently learning Vue.js, NestJS, and Kubernetes.",
       description: "Constantly learning new technologies",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
@@ -43,7 +43,7 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Tech enthusiast with a passion for development.",
+      title: "Tech enthusiast with a passion for development and hardware.",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
