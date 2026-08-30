@@ -1,3 +1,4 @@
 allowBuilds:
-  '@sentry/cli': true
-  sharp: false
+  '@sentry/cli': set this to true or false
+packages:
+  - "."
